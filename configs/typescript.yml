@@ -1,0 +1,110 @@
+parser: '@typescript-eslint/parser'
+plugins:
+  - '@typescript-eslint'
+extends:
+  - plugin:@typescript-eslint/eslint-recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:@typescript-eslint/recommended-requiring-type-checking
+overrides:
+  - files:
+      - '*.js'
+      - '*.jsx'
+    rules:
+      '@typescript-eslint/explicit-function-return-type': off
+rules:
+  # Enforce consistent brace style for blocks
+  '@typescript-eslint/brace-style':
+    - error
+    - 1tbs
+    - allowSingleLine: true
+
+  # Bans "// @ts-ignore" comments from being used
+  '@typescript-eslint/ban-ts-ignore': off
+
+  # Require explicit return types on functions and class methods
+  '@typescript-eslint/explicit-function-return-type':
+    - error
+
+  # Require explicit accessibility modifiers on class properties and methods
+  '@typescript-eslint/explicit-member-accessibility':
+    - error
+
+  # Require or disallow spacing between function identifiers and their invocations
+  func-call-spacing: off
+  '@typescript-eslint/func-call-spacing':
+    - error
+
+  # Enforce consistent indentation
+  indent: off
+  '@typescript-eslint/indent':
+    - error
+    - 4
+    - SwitchCase: 1
+
+  # Require a consistent member declaration order
+  '@typescript-eslint/member-ordering':
+    - error
+
+  # Disallow empty functions
+  '@typescript-eslint/no-empty-function':
+    - error
+    - allow:
+      - setters
+
+  # Disallow usage of the any type
+  '@typescript-eslint/no-explicit-any': off
+
+  # Disallow extra non-null assertion
+  '@typescript-eslint/no-extra-non-null-assertion':
+    - error
+
+  # Disallow unnecessary semicolons
+  no-extra-semi: off
+  '@typescript-eslint/no-extra-semi':
+    - error
+
+  # Disallow the use of eval()-like methods
+  '@typescript-eslint/no-implied-eval':
+    - error
+
+  # Disallows explicit type declarations for variables or parameters initialized to a number, string, or boolean
+  '@typescript-eslint/no-inferrable-types': off
+
+  # Disallows non-null assertions using the ! postfix operator
+  '@typescript-eslint/no-non-null-assertion': off
+
+  # Disallow the use of parameter properties in class constructors
+  '@typescript-eslint/no-parameter-properties':
+    - error
+
+  # Disallow throwing literals as exceptions
+  '@typescript-eslint/no-throw-literal':
+    - error
+
+  # Disallow unused variables
+  '@typescript-eslint/no-unused-vars':
+    - error
+
+  # Disallow unnecessary constructors
+  no-useless-constructor: off
+  '@typescript-eslint/no-useless-constructor':
+    - error
+
+  # Enforce the consistent use of either backticks, double, or single quotes
+  quotes: off
+  '@typescript-eslint/quotes':
+    - error
+    - single
+
+  # Require or disallow semicolons instead of ASI
+  semi: off
+  '@typescript-eslint/semi':
+    - error
+
+  # Require or disallow a space before function parenthesis
+  space-before-function-paren: off
+  '@typescript-eslint/space-before-function-paren':
+    - error
+    - anonymous: always
+      named: never
+      asyncArrow: always

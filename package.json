@@ -1,0 +1,21 @@
+{
+  "name": "@namorzyny/eslint-config",
+  "version": "1.0.0",
+
+  "peerDependencies": {
+    "eslint": ">= 7",
+    "@typescript-eslint/eslint-plugin": ">= 4",
+    "@typescript-eslint/parser": ">= 4"
+  },
+  "peerDependenciesMeta": {
+    "@typescript-eslint/eslint-plugin": {
+      "optional": true
+    },
+    "@typescript-eslint/parser": {
+      "optional": true
+    }
+  },
+
+  "main": "index.js",
+  "license": "MIT"
+}
