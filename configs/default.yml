@@ -359,6 +359,7 @@ rules:
   # enforce spacing around the * in generator functions
   generator-star-spacing:
     - error
+    - before
 
   # disallow duplicate imports
   no-duplicate-imports:
