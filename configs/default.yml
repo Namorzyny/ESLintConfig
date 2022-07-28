@@ -142,7 +142,7 @@ rules:
 
   # disallow variable declarations from shadowing variables declared in the outer scope
   no-shadow:
-    - error
+    - warn
     - builtinGlobals: true
 
   # disallow initializing to undefined
@@ -287,7 +287,7 @@ rules:
   # require quotes around object literal property names
   quote-props:
     - error
-    - consistent-as-needed
+    - as-needed
 
   # enforce the consistent use of either backticks, double, or single quotes
   quotes:
