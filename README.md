@@ -12,7 +12,7 @@
         // ...,
         extends: [
             '@namorzyny',
-            '@namorzyny/eslint-config-typescript',
+            '@namorzyny/eslint-config/typescript',
         ],
     };
 
