@@ -190,7 +190,7 @@ rules:
 
   # Enforce consistent returning of awaited values
   no-return-await: off
-  return-await:
+  '@typescript-eslint/return-await':
     - error
     - never
 
