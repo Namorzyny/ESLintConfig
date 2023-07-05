@@ -90,6 +90,7 @@ rules:
   # Require function parameters to be typed as readonly to prevent accidental mutation of inputs
   '@typescript-eslint/prefer-readonly-parameter-types':
     - error
+    - ignoreInferredTypes: true
 
   # Require switch-case statements to be exhaustive with union type
   '@typescript-eslint/switch-exhaustiveness-check':
