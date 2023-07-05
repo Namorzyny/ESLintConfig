@@ -5,7 +5,9 @@
   "peerDependencies": {
     "eslint": ">= 8",
     "@typescript-eslint/eslint-plugin": ">= 5",
-    "@typescript-eslint/parser": ">= 5"
+    "@typescript-eslint/parser": ">= 5",
+    "eslint-plugin-react": ">= 7",
+    "eslint-plugin-react-hooks": ">= 4"
   },
   "peerDependenciesMeta": {
     "@typescript-eslint/eslint-plugin": {
