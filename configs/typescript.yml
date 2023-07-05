@@ -16,7 +16,7 @@ rules:
   # -------- Supported Rules --------
 
   # Disallow @ts-<directive> comments or require descriptions after directives
-  '@typescript-eslint/ban-ts-ignore': off
+  '@typescript-eslint/ban-ts-comment': off
 
   # Bans "// @ts-ignore" comments from being used
   '@typescript-eslint/ban-ts-ignore': off
