@@ -100,6 +100,9 @@ rules:
   '@typescript-eslint/type-annotation-spacing':
     - error
 
+  # Enforce unbound methods are called with their expected scope
+  '@typescript-eslint/unbound-method': off
+
   # -------- Extension Rules --------
 
   # Disallow or enforce spaces inside of blocks after opening block and before closing block
