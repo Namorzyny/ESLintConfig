@@ -1,6 +1,6 @@
 {
   "name": "@namorzyny/eslint-config",
-  "version": "2.0.4",
+  "version": "2.0.5",
 
   "peerDependencies": {
     "eslint": ">= 8",
@@ -14,6 +14,12 @@
       "optional": true
     },
     "@typescript-eslint/parser": {
+      "optional": true
+    },
+    "eslint-plugin-react": {
+      "optional": true
+    },
+    "eslint-plugin-react-hooks": {
       "optional": true
     }
   },
